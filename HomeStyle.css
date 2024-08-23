@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+.home{
+    height: 90vh;
+    justify-content: center;
+    display: flex;
+    align-items: left;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    padding-left: 20px;
+}
+.homeContainer{
+    width: auto;
+    margin: 30px;
+}
+.home .homeContainer h1{
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+}
+.home .headerContainer p{
+    margin-top: 15px;
+    padding: 0;
+    font-size: 40px;
+    font-weight: lighter;
+    color: black;
+}
+.headerContainer button{
+    background-color: rgb(56, 56, 56);
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px ;
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.headerContainer button:hover{
+    background-color: black;
+    color: goldenrod;
+    transition: all 0.3s ease-in;
+}
+/*mobile view*/
+@media only screen and (max-width:600px){
+    .home{
+        justify-content: center;
+        align-items: center;
+    }
+    .headerContainer{
+        margin: 0;
+        border-radius: 10px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: transparent;
+        backdrop-filter: blur(6px);
+        border: 1px solid #c9c9c9;
+        color: white;
+    }
+    .headerContainer h1{
+        font-size: 40px;
+        height: 30px;
+        color: rgb(245, 177, 5);
+        margin: 30px 0;
+    }
+    .home .headerContainer p{
+        font-size: 30px;
+        font-weight: 300;
+        color: rgb(250, 179, 1);
+    }
+    .headerContainer button{
+        background-color: white;
+        color: rgb(104, 103, 103);
+        margin-bottom: 30px;
+    }
+    
+}
